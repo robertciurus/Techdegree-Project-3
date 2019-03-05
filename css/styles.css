@@ -1,0 +1,147 @@
+/* =================================
+  Base Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Laila', serif;
+
+}
+fieldset {
+    margin: 20px 0;
+    padding: 0;
+    border: none;
+  }
+
+header {
+      text-transform: uppercase;
+      font-size: 0.8em;
+      background-color: rgb(52,72,107);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin: auto;
+  }
+
+  legend,
+  h2  {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(52,72,107);
+
+  }
+
+  legend {
+    margin: 10px 0px;
+  }
+
+  input[placeholder] {
+      text-align: right;
+  }
+
+  .radio-checkbox {
+    margin-right: 5px;
+    margin-bottom: 15px;
+  }
+
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #ECECEC;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 12px 0;
+
+  }
+
+  .intro {
+  text-align: center;
+  padding: 15px;
+  font-size: 1em;
+  border-bottom: 6px double rgb(28,40,65);
+
+  }
+
+  .border {
+  border-top: 4px solid rgb(28,40,65);
+
+  }
+
+  .textarea textarea {
+   width: 100%;
+   background-color: #ECECEC;
+   padding: 12px;
+   border-radius: 8px;
+   margin-top: 12px;
+
+
+  }
+
+  .textarea input[type="button"] {
+    width: 100%;
+    background-color: #51A351;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 12px 0;
+  }
+
+  .textarea input[type="button"]:hover {
+    background-color: #2FB22F;
+  }
+
+  .input:focus,
+  select:focus,
+  .textarea textarea:focus {
+    box-shadow: 5px 5px 8px #888888;
+    outline: none;
+    text-align: left;
+  }
+
+  #zip {
+    width: 50%;
+  }
+
+  footer {
+    text-align: center;
+    font-style: italic;
+    color: grey;
+    margin-top: 7em;
+    margin-bottom: 3em;
+  }
+
+
+  /* =================================
+    Media Queries
+  ==================================== */
+
+  @media (min-width: 768px) {
+
+      .wrapper {
+          width: 50%;
+          margin: auto;
+      }
+
+      .input-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+
+      .input-container label {
+        align-self: center;
+        padding: 10px;
+        width: 30%;
+      }
+
+      .input {
+        width: 50%;
+      }
+
+      #zip {
+        width: 30%;
+      }
