@@ -37,10 +37,6 @@ header {
     margin: 10px 0px;
   }
 
-  input[placeholder] {
-      text-align: right;
-  }
-
   .radio-checkbox {
     margin-right: 5px;
     margin-bottom: 15px;
@@ -82,7 +78,7 @@ header {
 
   }
 
-  .textarea input[type="button"] {
+  .textarea input[type="submit"] {
     width: 100%;
     background-color: #51A351;
     padding: 15px;
@@ -90,7 +86,7 @@ header {
     margin: 12px 0;
   }
 
-  .textarea input[type="button"]:hover {
+  .textarea input[type="submit"]:hover {
     background-color: #2FB22F;
   }
 
@@ -100,6 +96,7 @@ header {
     box-shadow: 5px 5px 8px #888888;
     outline: none;
     text-align: left;
+    transition: box-shadow 0.2s
   }
 
   #zip {
@@ -112,6 +109,16 @@ header {
     color: grey;
     margin-top: 7em;
     margin-bottom: 3em;
+  }
+
+  .newsletter {
+    background-image: linear-gradient( #D3D3D3, #ECECEC);
+    border-radius: 5px;
+    margin-top: -20px;
+  }
+
+  .newsletter-title {
+    padding-top: 40px;
   }
 
 
